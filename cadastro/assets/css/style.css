@@ -1,0 +1,213 @@
+/* importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    /* para página de login */
+   
+}
+
+body{
+    /* largura e height de 100% para largura da tela toda  */
+    width: 100%;;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cor de fundo */
+    background-color: #753bbd;
+   
+
+}
+
+
+    /* editar o form-header */
+
+.form-header {
+    /* espaçamento entre o crie conta e email */
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+
+}   
+
+/* edita a cor, a borda, padding, etc do BOTÃO */
+.login-button button{
+    width: 30%;
+    /* distancia do cadastrar e confirmar senha */
+    margin-top: 1.0rem;
+    border: 1px solid black;
+    /* cor do botao */
+    background-color: black;
+    cursor: pointer;
+    /* arredeondar ou enquadrar a */
+    border-radius: 50px;
+    /* grossura do quadrado */
+    padding: 0.8rem 1.2rem;
+    color: #753bbd;
+   
+}
+
+.login-button{
+    /* deixar o botao no meio */
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+/* editar a o tamanho, decoração e cor da letra (a significa a href, onde está escrito "cadastrar" */
+.login-button a {
+    text-decoration: none;
+    /* cor da letra do botao */
+    color: #753bbd;
+}
+
+/* customizar os inputs */
+.input-group {
+    display: flex;
+    /* deixar um debaixo do outro */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.input-box input{
+    /* distanciamento de uma borda pra */
+    margin: 0.6rem 0;
+    /* grossura da borda */
+    padding: 0.8rem 1.2rem;
+    border:#fff;
+    /* pra deixar a ponta mais redonda ou quadrada */
+    border-radius: 50px;
+    /* cor do quadrado */
+    background-color: #46237A;
+    /* tamanho do botao, esses botao roxinho */
+    width: 100%;
+   
+}
+
+
+/* cor dentro do quadrado, hover */
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+/* pra deixar responsivo */
+@media screem and (max-width:1330px) {
+.form-image{
+    display: none;
+}
+.container {
+    width: 50%;
+}
+.form{
+    width: 100%;
+}
+ }
+
+ @media screen and (max-width: 1064px){
+    .container{
+        width: 90%;
+        height: auto;
+
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+ }
+
+
+ 
+ /* pra mudar o nome da label(email, senha ususario, nome etc) */
+ .input-box label{
+    color: #fff;
+
+ }
+
+ /* pra mudar o titulo (crie uma conta) */
+.form-header {
+    color: #fff;
+}
+
+/* editar a cor do placeholder */
+.input-box input::placeholder{
+    color: #f7f7f77b;
+
+}
+
+
+
+main{
+    height: 80vh;
+}
+
+/* códigos checkbox */
+/* video de checkbox e radio button- Gabriela Pinheiro */
+
+.wrapper{
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position:relative;
+   
+    
+}
+
+.wrapper section{
+    margin-bottom: 30px;
+}
+
+#checkbox{
+    display: none;
+    
+}
+
+.checkbox-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+/* mudar cor da palavra login */
+.checkbox-label a {
+     color: #0A0412;
+   
+
+     /* mudar cor do "eu concordo com os" */
+}
+.checkbox-login{
+    color: #fff;
+}
+
+/* mudar cor do termos e condiçoes */
+.checkbox-login a{
+    color: #0A0412;
+}
+
+img{
+    /*  */
+    &.center {
+        position: absolute;
+        top: 50%;
+        left: 65px ;
+        transform: translate(-50%, -50%);
+      }
+   
+    
+  
+}
+
